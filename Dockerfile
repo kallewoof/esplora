@@ -27,6 +27,8 @@ RUN source /root/.nvm/nvm.sh \
     npm run dist -- bitcoin-mainnet \
  && DEST=/srv/explorer/static/bitcoin-testnet \
     npm run dist -- bitcoin-testnet \
+ && DEST=/srv/explorer/static/bitcoin-signet \
+    npm run dist -- bitcoin-signet \
  && DEST=/srv/explorer/static/liquid-mainnet \
     npm run dist -- liquid-mainnet \
  && DEST=/srv/explorer/static/bitcoin-mainnet-blockstream \
